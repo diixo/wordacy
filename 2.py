@@ -48,7 +48,7 @@ model = Model(inputs, outputs)
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Обучаем модель
-model.fit(X, y, epochs=50, batch_size=4)
+model.fit(X, y, epochs=50, batch_size=5)
 
 # Функция для исправления текста
 def correct_text(text):

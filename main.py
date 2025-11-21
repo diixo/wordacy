@@ -42,7 +42,7 @@ from keras.models import Sequential
 from keras.layers import Embedding, LSTM, Dense, Dropout
 
 # Параметры
-embedding_dim = 200
+embedding_dim = 250
 lstm_units = 64
 
 # Модель
@@ -53,7 +53,7 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(X, y, batch_size=256, epochs=10)
+model.fit(X, y, batch_size=256, epochs=50)
 
 import numpy as np
 
